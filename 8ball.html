@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <img src="https://i.pinimg.com/originals/20/da/8a/20da8a8a568e62cd65084db4f8434b13.gif" id="first">
+        <center>
+            <a href="./index.html">Home</a>
+
+            <a href="./member.html">Info</a>
+
+            <a href="./guide.html">Concerts</a>
+
+            <a href="./8ball.html">8 ball</a>
+
+            <a href="./game.html">game</a>
+        </center>
+    </nav>
+    <style>
+        img:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        #what {
+            display: flex;
+        }
+
+        input {
+            height: 200px;
+            width: 300px;
+        }
+
+        #text {
+            width: 500px;
+            font-size: 30px;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <p>Type your YES or NO question and click the 8 ball!
+            <br>
+            <br>
+            <br>
+            You could ask anything you are curious about...examples:
+            <br>
+            Will _____ marry _______?
+            <br>
+
+            Will i join Blackpink?
+            <br>
+            Will I be a millionaire?
+
+
+        </p>
+        <div id="what">
+            <div id="text">
+                <label> Ask a question and predict your future!</label>
+                <input type="text">
+                <div id="container"></div>
+            </div>
+            <img src="Untitled design.png" onclick="Prediction()" id="himyguy">
+        </div>
+
+        <script>
+
+
+
+            var responses = [
+                "Yes", "Likely", "Hopfully", "All signs point to no (sorry!)", "Unlikely"
+            ]
+            function Prediction() {
+                var randomNumber = Math.random() * 4;
+
+                var randomInteger = Math.floor(randomNumber);
+
+                var Answer = responses[randomInteger];
+
+                document.getElementById("container").innerHTML = Answer;
+            }
+        </script>
+
+
+
+    </body>
+
+</html>

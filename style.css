@@ -1,0 +1,73 @@
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+main-heading {
+    color: rgb(221, 205, 200);
+}
+
+.myform {
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgb(250, 86, 149);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: -5px;
+}
+
+body {
+    background-color: lavenderblush;
+}
+
+a:hover {
+    background-color: rgb(235, 80, 132);
+}
+
+#first {
+    height: 60px;
+    width: 100px;
+}
+
+@keyframes bg-color-animation {
+    25% {
+        background-color: rgb(255, 190, 212);
+    }
+
+    50% {
+        background-color: plum;
+    }
+
+    75% {
+        background-color: lavender;
+    }
+
+    100% {
+        background-color: seashell;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    font-size: 30px;
+
+    border-style: none solid none solid;
+    border-width: 50%;
+    border-color: rgb(235, 117, 137);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(255, 190, 212);
+    height: 60px;
+    display: flex;
+
+    text-align: right;
+}
+
+img {
+    width: 900px;
+}
